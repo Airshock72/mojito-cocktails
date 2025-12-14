@@ -4,6 +4,13 @@ interface NavLinks {
     readonly title: string
 }
 
+export interface DrinkDetails {
+  readonly name: string
+  readonly country: string
+  readonly detail: string
+  readonly price: string
+}
+
 export const navLinks: Array<NavLinks> = [
   {
     id: 'cocktails',
@@ -20,5 +27,59 @@ export const navLinks: Array<NavLinks> = [
   {
     id: 'contact',
     title: 'Contact'
+  }
+]
+
+export const cocktailLists: Array<DrinkDetails> = [
+  {
+    name: 'Chapel Hill Shiraz',
+    country: 'AU',
+    detail: 'Battle',
+    price: '$10'
+  },
+  {
+    name: 'Caten Malbee',
+    country: 'AU',
+    detail: 'Battle',
+    price: '$49'
+  },
+  {
+    name: 'Rhino Pale Ale',
+    country: 'CA',
+    detail: '750 ml',
+    price: '$20'
+  },
+  {
+    name: 'Irish Guinness',
+    country: 'IE',
+    detail: '600 ml',
+    price: '$29'
+  }
+]
+
+export const mockTailLists: Array<DrinkDetails> = [
+  {
+    name: 'Tropical Bloom',
+    country: 'US',
+    detail: 'Battle',
+    price: '$10'
+  },
+  {
+    name: 'Passionfruit Mint',
+    country: 'US',
+    detail: 'Battle',
+    price: '$49'
+  },
+  {
+    name: 'Citrus Glow',
+    country: 'CA',
+    detail: '750 ml',
+    price: '$20'
+  },
+  {
+    name: 'Lavender Fizz',
+    country: 'IE',
+    detail: '600 ml',
+    price: '$29'
   }
 ]
