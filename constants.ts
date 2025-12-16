@@ -21,7 +21,7 @@ export const navLinks: Array<NavLinks> = [
     title: 'About Us'
   },
   {
-    id: 'work',
+    id: 'art',
     title: 'The Art'
   },
   {
@@ -82,4 +82,18 @@ export const mockTailLists: Array<DrinkDetails> = [
     detail: '600 ml',
     price: '$29'
   }
+]
+
+export const goodLists: Array<string> = [
+  'Handpicked ingredients',
+  'Signature techniques',
+  'Bartending artistry in action',
+  'Freshly muddled flavors'
+]
+
+export const featureLists: Array<string> = [
+  'Perfectly balanced blends',
+  'Garnished to perfection',
+  'Ice-cold every time',
+  'Expertly shaken & stirred'
 ]
