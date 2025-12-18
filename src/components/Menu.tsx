@@ -36,8 +36,8 @@ const Menu = () => {
 
   return (
     <section id='menu' aria-labelledby='menu-heading'>
-      <img src='/images/slider-left-leaf.png' alt='left-leaf' id='m-left-leaf' />
-      <img src='/images/slider-right-leaf.png' alt='right-leaf' id='m-right-leaf' />
+      <img src='/mojito-cocktails/images/slider-left-leaf.png' alt='left-leaf' id='m-left-leaf' />
+      <img src='/mojito-cocktails/images/slider-right-leaf.png' alt='right-leaf' id='m-right-leaf' />
 
       <h2 id='menu-heading' className='sr-only'>
             Cocktail Menu
@@ -63,14 +63,14 @@ const Menu = () => {
             onClick={() => goToIndex(currentIndex - 1)}
           >
             <span>{prevCocktail.name}</span>
-            <img src='/images/right-arrow.png' alt='right-arrow' aria-hidden='true' />
+            <img src='/mojito-cocktails/images/right-arrow.png' alt='right-arrow' aria-hidden='true' />
           </button>
           <button
             className='text-left'
             onClick={() => goToIndex(currentIndex + 1)}
           >
             <span>{nextCocktail.name}</span>
-            <img src='/images/left-arrow.png' alt='left-arrow' aria-hidden='true' />
+            <img src='/mojito-cocktails/images/left-arrow.png' alt='left-arrow' aria-hidden='true' />
           </button>
         </div>
 
