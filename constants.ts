@@ -19,6 +19,17 @@ interface SliderList {
   readonly description: string
 }
 
+interface OpeningHours {
+  readonly day: string
+  readonly time: string
+}
+
+interface Socials {
+  readonly name: string
+  readonly icon: string
+  readonly url: string
+}
+
 export const navLinks: Array<NavLinks> = [
   {
     id: 'cocktails',
@@ -138,5 +149,30 @@ export const sliderLists: Array<SliderList> = [
     title: 'Crafted With Care, Poured With Love',
     description:
         'Each cocktail is made with fresh ingredients and a passion for perfecting every pour, whether you\'re celebrating or simply relaxing.'
+  }
+]
+
+export const openingHours: Array<OpeningHours> = [
+  { day: 'Mon–Thu', time: '11:00am – 12am' },
+  { day: 'Fri', time: '11:00am – 2am' },
+  { day: 'Sat', time: '9:00am – 2am' },
+  { day: 'Sun', time: '9:00am – 1am' }
+]
+
+export const socials: Array<Socials> = [
+  {
+    name: 'Instagram',
+    icon: '/images/insta.png',
+    url: '#'
+  },
+  {
+    name: 'X (Twitter)',
+    icon: '/images/x.png',
+    url: '#'
+  },
+  {
+    name: 'Facebook',
+    icon: '/images/fb.png',
+    url: '#'
   }
 ]
